@@ -37,10 +37,7 @@ To run this project locally, you need a web browser.
 6. Click "New QR Code" to reset the input and generate a new QR code.
 
 ## Demo
-A live demo of the project can be found [here](#). (Replace `#` with the link to your hosted demo if applicable.)
-
-## Screenshots
-![QR-Pro Screenshot](screenshot.png) (Add a screenshot image in your repository)
+A live demo of the project can be found here: https://qrpro-bk.vercel.app/
 
 ## Social Media Links
 - [GitHub](https://github.com/Barathkalyan)
