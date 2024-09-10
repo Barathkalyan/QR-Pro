@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>QR-Pro</title>
+</head>
+<body>
+    <h1 class="abc">QR-Pro: QR Code Generator</h1>
+    <h2 class="bcd">Your Information, Simply Encoded and Scanned!!</h2>
+    <div class="container">
+        <div class="wrapper">
+            <input type="text" id="qr-text" placeholder="Enter text/link">
+            <button class="btn qr-btn" onclick="generateQR()">Generate QR code</button>
+            <div id="qrcode"></div>
+            <!-- Buttons for download and reset -->
+            <div id="buttons" style="display: none;">
+                <button class="btn download-btn" onclick="downloadQR()">Download QR</button>
+                <button class="btn reset-btn" onclick="resetQR()">New QR Code</button>
+            </div>
+        </div>
+    </div>
+    <div class="social-container">
+        <div class="button">
+            <div class="icon1">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <a href="https://github.com/Barathkalyan">
+        <span> Github</span>
+        </a>      
+        </div>
+
+        <div class="button">
+            <div class="icon2">
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+        <a href="https://www.linkedin.com/in/t-barathkalyan-b4253328b/">   
+        <span> Linkedin </span>
+        </a>      
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
