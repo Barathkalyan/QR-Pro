@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -7,61 +9,52 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    margin: 0;
     background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    font-family: 'Anton', sans-serif;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    padding-left: 0px;
-    width: auto;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
 .wrapper {
-    width: 700px;
-    height: auto;
-    background-color: white;
-    border-radius: 30px;
+    width: 90%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2); /* Glassmorphism effect */
+    border-radius: 20px;
     padding: 30px;
-    padding-left: 50px;
-    box-shadow: 0px 10px 15px -3px rgb(54, 124, 151);
+    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .abc {
     font-weight: bolder;
-    font-family: "Anton", sans-serif;
-    font-style: normal;
-    text-shadow: 50px solid rgb(88, 21, 21);
-    font-size: 110px;
-    color: rgb(231, 212, 212);
+    font-size: 3rem;
+    color: #e7d4d4;
     text-transform: capitalize;
     margin-bottom: 20px;
     text-align: center;
     width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation:
-        typing 2s steps(15),
-        cursor .4s step-end infinite alternate;
-    
+    animation: typing 2s steps(15), cursor .4s step-end infinite alternate;
 }
 
 .bcd {
-    font-size: 32px;
-    color: rgb(231, 212, 212);
+    font-size: 1.5rem;
+    color: #e7d4d4;
     margin-bottom: 40px;
-    padding-left: 200px;
+    text-align: center;
 }
 
 .btn {
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     height: 45px;
     display: flex;
     align-items: center;
@@ -72,30 +65,32 @@ body {
     margin-top: 10px;
     border-radius: 20px;
     cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
 .qr-btn {
-    background: rgb(187, 101, 101);
-    font-size: 20px;
+    background: #bb6565;
 }
 
 .download-btn {
-    background: rgb(83, 177, 83);
-    font-size: 20px;
+    background: #53b153;
 }
 
 .reset-btn {
-    background: rgb(226, 198, 39);
-    font-size: 20px;
+    background: #e2c627;
 }
 
 input {
     height: 45px;
     padding: 10px 20px;
-    font-size: 20px;
-    width: 80%;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 300px;
     border-radius: 20px;
-    border: 1px solid black;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
 }
 
 #qrcode {
@@ -103,67 +98,56 @@ input {
 }
 
 #buttons {
-    margin-top: 20px;
     display: flex;
     gap: 10px;
 }
 
 @keyframes cursor {
-    50% { border-color: transparent }
-    
+    50% { border-color: transparent; }
 }
 
 @keyframes typing {
-    from { width:0 }
-    
+    from { width: 0; }
 }
 
-.social-container{
-    position: absolute;
+.social-container {
+    display: flex;
+    gap: 10px;
+    position: fixed;
     bottom: 30px;
-    right: 20px;
-    margin-left: 1000px;
-    width: 300px;
-    height:100px;
-    background-color: #03ffff;
-    border-radius: 20px;
+    right: 30px;
 }
 
-
-.social-container .button:hover{
-    width:200px;
-
+.button {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2); /* Glassmorphism effect */
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.social-container .button .icon1{
-    display: inline-block;
+.button:hover {
+    transform: scale(1.1);
+}
+
+.icon1, .icon2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 50px;
-    width: 60px;
-    text-align: center;
-    border-radius: 50px;
-    box-sizing: border-box;
-    line-height: 60px;   
-
-}
-.social-container .button .icon2{
-    display: inline-block;
-    align-items:flex-start;
-    height: 50px;
-    width: 60px;
-    text-align: center;
-    border-radius: 50px;
-    box-sizing: border-box;
-    line-height: 60px;
-
+    width: 50px;
+    border-radius: 50%;
 }
 
-.social-container .button .icon1 i{
-    width:30px;
-    height:45px;
+.icon1 i, .icon2 i {
+    font-size: 24px;
 }
 
-span{
-    font-size: 30px;
+span {
+    font-size: 1.2rem;
+    margin-left: 10px;
 }
 
 
