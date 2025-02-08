@@ -1,7 +1,7 @@
 # QR-Pro: QR Code Generator
 
 ## Overview
-QR-Pro is a simple and intuitive web application that allows users to generate QR codes from any text or URL. Easily encode and scan your information using this generator.
+QR-Pro is a simple and intuitive web application that allows users to generate QR codes from any text or URL. Easily encode and scan your information using this generator. Built using HTML,CSS and node js, this is a simple,  user-friendly application!
 
 ## Features
 - Generate QR codes from text or links
