@@ -51,6 +51,7 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## Contact
 For any queries or feedback, feel free to contact me through [LinkedIn](https://www.linkedin.com/in/t-barathkalyan-b4253328b/) or create an issue in this repository.
+Future developments are underway!!
 
 ---
 
