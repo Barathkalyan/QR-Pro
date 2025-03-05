@@ -55,5 +55,8 @@ Future developments are underway!!
 
 ---
 
+## Future integrations
+The UI is to be made more flexible!
+
 **Enjoy using QR-Pro!**
 
